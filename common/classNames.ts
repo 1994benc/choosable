@@ -1,0 +1,1 @@
+export const pageContainer = 'mx-auto max-w-xl px-3 py-20';

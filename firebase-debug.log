@@ -1,89 +1,78 @@
-[debug] [2021-10-26T20:11:26.614Z] ----------------------------------------------------------------------
-[debug] [2021-10-26T20:11:26.634Z] Command:       /usr/local/bin/node /usr/local/share/npm-global/bin/firebase emulators:start
-[debug] [2021-10-26T20:11:26.636Z] CLI Version:   9.21.0
-[debug] [2021-10-26T20:11:26.637Z] Platform:      linux
-[debug] [2021-10-26T20:11:26.638Z] Node Version:  v16.8.0
-[debug] [2021-10-26T20:11:26.639Z] Time:          Tue Oct 26 2021 20:11:26 GMT+0000 (Coordinated Universal Time)
-[debug] [2021-10-26T20:11:26.640Z] ----------------------------------------------------------------------
+[debug] [2021-10-27T20:04:08.917Z] ----------------------------------------------------------------------
+[debug] [2021-10-27T20:04:08.919Z] Command:       /usr/local/bin/node /usr/local/share/npm-global/bin/firebase emulators:start
+[debug] [2021-10-27T20:04:08.919Z] CLI Version:   9.21.0
+[debug] [2021-10-27T20:04:08.920Z] Platform:      linux
+[debug] [2021-10-27T20:04:08.920Z] Node Version:  v16.8.0
+[debug] [2021-10-27T20:04:08.920Z] Time:          Wed Oct 27 2021 20:04:08 GMT+0000 (Coordinated Universal Time)
+[debug] [2021-10-27T20:04:08.920Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2021-10-26T20:11:26.863Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] Failed to authenticate, have you run firebase login?
-[warn] ⚠  emulators: You are not currently authenticated so some features may not work correctly. Please run firebase login to authenticate the CLI. 
+[debug] [2021-10-27T20:04:09.010Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-27T20:04:09.010Z] > authorizing via signed-in user (1994benc@gmail.com)
 [info] i  emulators: Starting emulators: auth, functions, firestore, database, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, storage"}}
-[debug] [2021-10-26T20:11:27.017Z] [hub] writing locator at /tmp/hub-choosable-dev.json
+[debug] [2021-10-27T20:04:09.035Z] [hub] writing locator at /tmp/hub-choosable-dev.json
 [warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mhosting, pubsub\u001b[22m"}}
 [info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
-[warn] ⚠  functions: You are not signed in to the Firebase CLI. If you have authorized this machine using gcloud application-default credentials those may be discovered and used to access production services. {"metadata":{"emulator":{"name":"functions"},"message":"You are not signed in to the Firebase CLI. If you have authorized this machine using gcloud application-default credentials those may be discovered and used to access production services."}}
-[debug] [2021-10-26T20:11:27.143Z] > refreshing access token with scopes: []
-[debug] [2021-10-26T20:11:27.150Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2021-10-26T20:11:27.331Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 26 Oct 2021 20:11:27 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-10-26T20:11:27.336Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev/adminSdkConfig [none]
-[debug] [2021-10-26T20:11:27.468Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev/adminSdkConfig 401
-[debug] [2021-10-26T20:11:27.469Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev/adminSdkConfig {"error":{"code":401,"message":"Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"CREDENTIALS_MISSING","domain":"googleapis.com","metadata":{"service":"firebase.googleapis.com","method":"google.firebase.service.v1beta1.FirebaseProjectService.GetAdminSdkConfig"}}]}}
-[debug] [2021-10-26T20:11:27.471Z] Failed to get Admin SDK config for choosable-dev, falling back to cache Failed to get Admin SDK for Firebase project choosable-dev. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project choosable-dev. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":401,"message":"Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"CREDENTIALS_MISSING","domain":"googleapis.com","metadata":{"service":"firebase.googleapis.com","method":"google.firebase.service.v1beta1.FirebaseProjectService.GetAdminSdkConfig"}}]}},"response":{"statusCode":401}},"exit":1,"message":"HTTP Error: 401, Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":401},"status":500}
-[warn] ⚠  functions: Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect. {"metadata":{"emulator":{"name":"functions"},"message":"Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect."}}
-[debug] [2021-10-26T20:11:27.506Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
-[debug] [2021-10-26T20:11:27.507Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2021-10-26T20:11:27.508Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/node/.cache/firebase/emulators/cloud-firestore-emulator-v1.13.1.jar","--host","localhost","--port",8081,"--rules","/workspaces/choosable/firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/node/.cache/firebase/emulators/cloud-firestore-emulator-v1.13.1.jar\",\"--host\",\"localhost\",\"--port\",8081,\"--rules\",\"/workspaces/choosable/firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[debug] [2021-10-27T20:04:09.060Z] defaultcredentials: writing to file /home/node/.config/firebase/1994benc_gmail_com_application_default_credentials.json
+[debug] [2021-10-27T20:04:09.062Z] Setting GAC to /home/node/.config/firebase/1994benc_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/node/.config/firebase/1994benc_gmail_com_application_default_credentials.json"}}
+[debug] [2021-10-27T20:04:09.070Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev/adminSdkConfig [none]
+[debug] [2021-10-27T20:04:09.315Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev/adminSdkConfig 200
+[debug] [2021-10-27T20:04:09.316Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev/adminSdkConfig {"projectId":"choosable-dev","storageBucket":"choosable-dev.appspot.com","locationId":"europe-west"}
+[debug] [2021-10-27T20:04:09.331Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-10-27T20:04:09.332Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-10-27T20:04:09.332Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/node/.cache/firebase/emulators/cloud-firestore-emulator-v1.13.1.jar","--host","localhost","--port",8081,"--rules","/workspaces/choosable/firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/node/.cache/firebase/emulators/cloud-firestore-emulator-v1.13.1.jar\",\"--host\",\"localhost\",\"--port\",8081,\"--rules\",\"/workspaces/choosable/firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
 [info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
-[debug] [2021-10-26T20:11:34.928Z] Oct 26, 2021 8:11:34 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
-INFO: Started WebSocket server on ws://localhost:42107
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 8:11:34 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://localhost:42107\n"}}
-[debug] [2021-10-26T20:11:35.033Z] API endpoint: http://localhost:8081
+[debug] [2021-10-27T20:04:10.257Z] Oct 27, 2021 8:04:10 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://localhost:36819
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 8:04:10 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://localhost:36819\n"}}
+[debug] [2021-10-27T20:04:10.280Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2021-10-27T20:04:10.281Z] localhost:8081
 If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
 
    export FIRESTORE_EMULATOR_HOST=localhost:8081
 
 Dev App Server is now running.
 
- {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://localhost:8081\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8081\n\nDev App Server is now running.\n\n"}}
-[debug] [2021-10-26T20:11:35.140Z] > refreshing access token with scopes: []
-[debug] [2021-10-26T20:11:35.140Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2021-10-26T20:11:35.240Z] <<< HTTP RESPONSE 400 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 26 Oct 2021 20:11:35 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-10-26T20:11:35.253Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev [none]
-[debug] [2021-10-26T20:11:35.354Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev 401
-[debug] [2021-10-26T20:11:35.355Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev {"error":{"code":401,"message":"Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"CREDENTIALS_MISSING","domain":"googleapis.com","metadata":{"service":"firebase.googleapis.com","method":"google.firebase.service.v1beta1.FirebaseProjectService.GetFirebaseProject"}}]}}
-[debug] [2021-10-26T20:11:35.356Z] HTTP Error: 401, Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2021-10-26T20:11:35.356Z] Failed to retrieve default database instance: {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Firebase project choosable-dev. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":401,"message":"Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"CREDENTIALS_MISSING","domain":"googleapis.com","metadata":{"service":"firebase.googleapis.com","method":"google.firebase.service.v1beta1.FirebaseProjectService.GetFirebaseProject"}}]}},"response":{"statusCode":401}},"exit":1,"message":"HTTP Error: 401, Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":401},"status":500} {"metadata":{"emulator":{"name":"database"},"message":"Failed to retrieve default database instance: {\"name\":\"FirebaseError\",\"children\":[],\"exit\":2,\"message\":\"Failed to get Firebase project choosable-dev. Please make sure the project exists and your account has permission to access it.\",\"original\":{\"name\":\"FirebaseError\",\"children\":[],\"context\":{\"body\":{\"error\":{\"code\":401,\"message\":\"Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.\",\"status\":\"UNAUTHENTICATED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"CREDENTIALS_MISSING\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"firebase.googleapis.com\",\"method\":\"google.firebase.service.v1beta1.FirebaseProjectService.GetFirebaseProject\"}}]}},\"response\":{\"statusCode\":401}},\"exit\":1,\"message\":\"HTTP Error: 401, Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.\",\"status\":401},\"status\":500}"}}
-[debug] [2021-10-26T20:11:35.357Z] database rules config:  []
+ {"metadata":{"emulator":{"name":"firestore"},"message":"localhost:8081\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8081\n\nDev App Server is now running.\n\n"}}
+[debug] [2021-10-27T20:04:10.354Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev [none]
+[debug] [2021-10-27T20:04:10.566Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev 200
+[debug] [2021-10-27T20:04:10.567Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/choosable-dev {"projectId":"choosable-dev","projectNumber":"688970934019","displayName":"Choosable Dev","name":"projects/choosable-dev","resources":{"hostingSite":"choosable-dev","storageBucket":"choosable-dev.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2021-10-27T20:04:10.567Z] database rules config:  []
 [warn] ⚠  database: Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"database"},"message":"Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
-[debug] [2021-10-26T20:11:35.362Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
-[debug] [2021-10-26T20:11:35.363Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2021-10-26T20:11:35.364Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
-[debug] [2021-10-26T20:11:35.364Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/node/.cache/firebase/emulators/firebase-database-emulator-v4.7.2.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/node/.cache/firebase/emulators/firebase-database-emulator-v4.7.2.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[debug] [2021-10-27T20:04:10.568Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-10-27T20:04:10.569Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-10-27T20:04:10.569Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2021-10-27T20:04:10.569Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/node/.cache/firebase/emulators/firebase-database-emulator-v4.7.2.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/node/.cache/firebase/emulators/firebase-database-emulator-v4.7.2.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
 [info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
-[debug] [2021-10-26T20:11:43.998Z] 20:11:43.982 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
- {"metadata":{"emulator":{"name":"database"},"message":"20:11:43.982 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
-[debug] [2021-10-26T20:11:45.146Z] 20:11:45.137 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
- {"metadata":{"emulator":{"name":"database"},"message":"20:11:45.137 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
-[debug] [2021-10-26T20:12:06.787Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2021-10-26T20:12:08.268Z] Temp file directory for storage emulator: /tmp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /tmp/firebase/storage/blobs"}}
-[debug] [2021-10-26T20:12:21.737Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2021-10-26T20:12:21.738Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2021-10-26T20:12:21.738Z] Starting Emulator UI with command {"binary":"node","args":["/home/node/.cache/firebase/emulators/ui-v1.6.4/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/node/.cache/firebase/emulators/ui-v1.6.4/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[debug] [2021-10-27T20:04:11.756Z] 20:04:11.755 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"20:04:11.755 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2021-10-27T20:04:11.909Z] 20:04:11.908 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"20:04:11.908 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
+[debug] [2021-10-27T20:04:15.615Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-10-27T20:04:15.805Z] Temp file directory for storage emulator: /tmp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /tmp/firebase/storage/blobs"}}
+[debug] [2021-10-27T20:04:16.527Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-10-27T20:04:16.527Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-10-27T20:04:16.528Z] Starting Emulator UI with command {"binary":"node","args":["/home/node/.cache/firebase/emulators/ui-v1.6.4/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/node/.cache/firebase/emulators/ui-v1.6.4/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2021-10-26T20:12:22.886Z] Web / API server started at localhost:4000
+[debug] [2021-10-27T20:04:16.630Z] Web / API server started at localhost:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
 [info] i  functions: Watching "/workspaces/choosable/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/workspaces/choosable/functions\" for Cloud Functions..."}}
-[debug] [2021-10-26T20:12:23.149Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
-[debug] [2021-10-26T20:12:23.161Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
-[debug] [2021-10-26T20:12:23.161Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
-[debug] [2021-10-26T20:12:23.166Z] [worker-~diagnostic~-eaa80ada-4ab1-438d-9d10-dc9b86b83599]: Assigning socketPath: /tmp/fire_emu_38958.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-eaa80ada-4ab1-438d-9d10-dc9b86b83599]: Assigning socketPath: /tmp/fire_emu_38958.sock"}}
-[debug] [2021-10-26T20:12:23.175Z] [worker-~diagnostic~-eaa80ada-4ab1-438d-9d10-dc9b86b83599]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-eaa80ada-4ab1-438d-9d10-dc9b86b83599]: BUSY"}}
-[debug] [2021-10-26T20:12:24.415Z] [runtime-status] [38958] Functions runtime initialized. {"cwd":"/workspaces/choosable/functions","node_version":"16.8.0"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] Functions runtime initialized. {\"cwd\":\"/workspaces/choosable/functions\",\"node_version\":\"16.8.0\"}"}}
-[debug] [2021-10-26T20:12:24.419Z] [runtime-status] [38958] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] Disabled runtime features: undefined"}}
-[debug] [2021-10-26T20:12:24.481Z] [runtime-status] [38958] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2021-10-26T20:12:24.572Z] [runtime-status] [38958] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2021-10-26T20:12:24.580Z] [runtime-status] [38958] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2021-10-26T20:12:24.616Z] [runtime-status] [38958] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2021-10-26T20:12:25.612Z] [runtime-status] [38958] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] Checked functions.config() {\"config\":{}}"}}
-[debug] [2021-10-26T20:12:25.619Z] [runtime-status] [38958] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
-[debug] [2021-10-26T20:12:25.667Z] [runtime-status] [38958] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2021-10-26T20:12:25.856Z] [runtime-status] [38958] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2021-10-26T20:12:25.899Z] [runtime-status] [38958] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2021-10-26T20:12:25.900Z] [runtime-status] [38958] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [38958] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2021-10-27T20:04:16.802Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-10-27T20:04:16.803Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-10-27T20:04:16.803Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-10-27T20:04:16.804Z] [worker-~diagnostic~-240d1a68-ff6b-4771-83a8-81ff567d5aa7]: Assigning socketPath: /tmp/fire_emu_8089.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-240d1a68-ff6b-4771-83a8-81ff567d5aa7]: Assigning socketPath: /tmp/fire_emu_8089.sock"}}
+[debug] [2021-10-27T20:04:16.804Z] [worker-~diagnostic~-240d1a68-ff6b-4771-83a8-81ff567d5aa7]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-240d1a68-ff6b-4771-83a8-81ff567d5aa7]: BUSY"}}
+[debug] [2021-10-27T20:04:16.931Z] [runtime-status] [8089] Functions runtime initialized. {"cwd":"/workspaces/choosable/functions","node_version":"16.8.0"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] Functions runtime initialized. {\"cwd\":\"/workspaces/choosable/functions\",\"node_version\":\"16.8.0\"}"}}
+[debug] [2021-10-27T20:04:16.932Z] [runtime-status] [8089] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] Disabled runtime features: undefined"}}
+[debug] [2021-10-27T20:04:16.935Z] [runtime-status] [8089] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2021-10-27T20:04:16.939Z] [runtime-status] [8089] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-10-27T20:04:16.942Z] [runtime-status] [8089] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2021-10-27T20:04:16.944Z] [runtime-status] [8089] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-10-27T20:04:16.978Z] [runtime-status] [8089] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] Checked functions.config() {\"config\":{}}"}}
+[debug] [2021-10-27T20:04:16.978Z] [runtime-status] [8089] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2021-10-27T20:04:16.979Z] [runtime-status] [8089] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-10-27T20:04:16.980Z] [runtime-status] [8089] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2021-10-27T20:04:16.982Z] [runtime-status] [8089] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-10-27T20:04:16.982Z] [runtime-status] [8089] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [8089] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/workspaces/choosable/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
 [info] ✔  functions[us-central1-helloWorld]: http function initialized (http://localhost:5001/choosable-dev/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/choosable-dev/us-central1/helloWorld)."}}
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
@@ -109,228 +98,36 @@ Dev App Server is now running.
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[debug] [2021-10-26T20:12:26.113Z] [worker-~diagnostic~-eaa80ada-4ab1-438d-9d10-dc9b86b83599]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-eaa80ada-4ab1-438d-9d10-dc9b86b83599]: IDLE"}}
-[debug] [2021-10-26T20:12:48.455Z] Oct 26, 2021 8:12:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+[debug] [2021-10-27T20:04:16.992Z] [worker-~diagnostic~-240d1a68-ff6b-4771-83a8-81ff567d5aa7]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-240d1a68-ff6b-4771-83a8-81ff567d5aa7]: IDLE"}}
+[debug] [2021-10-27T20:04:19.984Z] Oct 27, 2021 8:04:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 8:12:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T20:12:49.037Z] Oct 26, 2021 8:12:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 8:12:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T20:12:50.096Z] Oct 26, 2021 8:12:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 8:12:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T20:13:05.556Z] Oct 26, 2021 8:13:05 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 8:04:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-10-27T20:04:20.454Z] Oct 27, 2021 8:04:20 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
 INFO: Connected to new websocket client
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 8:13:05 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
-[debug] [2021-10-26T21:08:19.150Z] Oct 26, 2021 9:08:18 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 9:08:18 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:04.148Z] Oct 26, 2021 10:14:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:06.540Z] Oct 26, 2021 10:14:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:08.842Z] Oct 26, 2021 10:14:08 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:08 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:11.029Z] Oct 26, 2021 10:14:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:13.183Z] Oct 26, 2021 10:14:13 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:13 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:15.315Z] Oct 26, 2021 10:14:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:17.425Z] Oct 26, 2021 10:14:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:19.488Z] Oct 26, 2021 10:14:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:21.566Z] Oct 26, 2021 10:14:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:23.656Z] Oct 26, 2021 10:14:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:25.741Z] Oct 26, 2021 10:14:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:27.917Z] Oct 26, 2021 10:14:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:30.000Z] Oct 26, 2021 10:14:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:33.347Z] Oct 26, 2021 10:14:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:35.815Z] Oct 26, 2021 10:14:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:37.992Z] Oct 26, 2021 10:14:37 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:37 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:42.868Z] Oct 26, 2021 10:14:42 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:42 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:14:45.014Z] Oct 26, 2021 10:14:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:14:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:15:35.736Z] Oct 26, 2021 10:15:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:15:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:48:27.660Z] Oct 26, 2021 10:48:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:48:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:54:49.225Z] Oct 26, 2021 10:54:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:54:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T22:55:34.140Z] Oct 26, 2021 10:55:34 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 10:55:34 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:02.228Z] Oct 26, 2021 11:01:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:22.121Z] Oct 26, 2021 11:01:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:24.697Z] Oct 26, 2021 11:01:24 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:24 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:26.981Z] Oct 26, 2021 11:01:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:29.224Z] Oct 26, 2021 11:01:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:32.070Z] Oct 26, 2021 11:01:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:34.195Z] Oct 26, 2021 11:01:34 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:34 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:36.393Z] Oct 26, 2021 11:01:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:38.564Z] Oct 26, 2021 11:01:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:41.077Z] Oct 26, 2021 11:01:41 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:41 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:43.471Z] Oct 26, 2021 11:01:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:45.837Z] Oct 26, 2021 11:01:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:47.989Z] Oct 26, 2021 11:01:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:50.110Z] Oct 26, 2021 11:01:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:52.340Z] Oct 26, 2021 11:01:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:54.975Z] Oct 26, 2021 11:01:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:01:58.875Z] Oct 26, 2021 11:01:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:01:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:02:01.232Z] Oct 26, 2021 11:02:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:02:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:02:03.675Z] Oct 26, 2021 11:02:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:02:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:02:05.920Z] Oct 26, 2021 11:02:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:02:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:02:08.594Z] Oct 26, 2021 11:02:08 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:02:08 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:02:14.238Z] Oct 26, 2021 11:02:13 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 8:04:20 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2021-10-27T20:04:20.605Z] Oct 27, 2021 8:04:20 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
 INFO: Websocket client disconnected
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:02:13 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
-[debug] [2021-10-26T23:03:39.227Z] Oct 26, 2021 11:03:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 8:04:20 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2021-10-27T20:04:21.694Z] Oct 27, 2021 8:04:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:03:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:03:41.467Z] Oct 26, 2021 11:03:41 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 8:04:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-10-27T20:04:22.361Z] Oct 27, 2021 8:04:22 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
 INFO: Connected to new websocket client
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:03:41 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
-[debug] [2021-10-26T23:03:43.217Z] Oct 26, 2021 11:03:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 8:04:22 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2021-10-27T20:04:25.678Z] Oct 27, 2021 8:04:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:03:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:03:45.300Z] Oct 26, 2021 11:03:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 8:04:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-10-27T20:04:27.709Z] Oct 27, 2021 8:04:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:03:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:03:48.473Z] Oct 26, 2021 11:03:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 8:04:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-10-27T20:05:00.080Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast [none]
+[debug] [2021-10-27T20:05:00.081Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast {"eventId":"8c1a361e-2313-49ff-9233-256b298039b8","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/choosable-dev","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2021-10-27T20:05:00.080Z","data":{"uid":"4V1XLEkNwBAmS58OHv5v8GELItwz","email":"panda.chicken.74@example.com","emailVerified":true,"displayName":"Panda Chicken","metadata":{"creationTime":"1635365100079","lastSignInTime":"1635365100079"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"7955281784958807310519382775697778671432","federatedId":"7955281784958807310519382775697778671432","displayName":"Panda Chicken","email":"panda.chicken.74@example.com","screenName":"chicken_panda"}]}}
+[debug] [2021-10-27T20:05:00.104Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast 200
+[debug] [2021-10-27T20:05:00.104Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2021-10-27T20:42:19.271Z] Oct 27, 2021 8:42:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:03:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:03:51.619Z] Oct 26, 2021 11:03:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:03:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:03:53.802Z] Oct 26, 2021 11:03:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:03:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:03:56.093Z] Oct 26, 2021 11:03:56 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:03:56 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:03:58.144Z] Oct 26, 2021 11:03:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:03:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:19:30.478Z] Oct 26, 2021 11:19:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:19:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:24:33.034Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast [none]
-[debug] [2021-10-26T23:24:33.037Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast {"eventId":"c62d23c9-9215-43ee-99e2-58bfdc008a5e","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/choosable-dev","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2021-10-26T23:24:33.013Z","data":{"uid":"tdmYHgtKpkT6Z2psZ7qorkJlhOvt","email":"chicken.algae.551@example.com","emailVerified":true,"displayName":"Chicken Algae","metadata":{"creationTime":"1635290672978","lastSignInTime":"1635290672977"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"6375952541057003026171685180437331354067","federatedId":"6375952541057003026171685180437331354067","displayName":"Chicken Algae","email":"chicken.algae.551@example.com","screenName":"algae_chicken"}]}}
-[debug] [2021-10-26T23:24:33.324Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast 200
-[debug] [2021-10-26T23:24:33.325Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast {"status":"multicast_acknowledged"}
-[debug] [2021-10-26T23:27:17.814Z] Oct 26, 2021 11:27:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:27:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:27:20.578Z] Oct 26, 2021 11:27:20 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
-INFO: Websocket client disconnected
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:27:20 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
-[debug] [2021-10-26T23:27:23.171Z] Oct 26, 2021 11:27:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:27:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:27:25.501Z] Oct 26, 2021 11:27:25 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
-INFO: Connected to new websocket client
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:27:25 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
-[debug] [2021-10-26T23:27:28.061Z] Oct 26, 2021 11:27:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:27:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
-[debug] [2021-10-26T23:34:21.554Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast [none]
-[debug] [2021-10-26T23:34:21.561Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast {"eventId":"d0d37630-0f2b-48f9-ae34-74dcf8bf0af1","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/choosable-dev","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2021-10-26T23:34:21.553Z","data":{"uid":"3cLmjNJa99wgJcnLqWHQU7FykGKw","email":"peach.peach.400@example.com","emailVerified":true,"displayName":"Peach Peach","metadata":{"creationTime":"1635291261553","lastSignInTime":"1635291261553"},"customClaims":{},"providerData":[{"providerId":"microsoft.com","rawId":"0891168499308101807822314314291629399756","federatedId":"0891168499308101807822314314291629399756","displayName":"Peach Peach","email":"peach.peach.400@example.com","screenName":"peach_peach"}]}}
-[debug] [2021-10-26T23:34:21.837Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast 200
-[debug] [2021-10-26T23:34:21.838Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast {"status":"multicast_acknowledged"}
-[debug] [2021-10-26T23:48:57.443Z] Oct 26, 2021 11:48:56 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
-INFO: Websocket client disconnected
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:48:56 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
-[debug] [2021-10-26T23:49:19.264Z] Oct 26, 2021 11:49:19 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
-INFO: Connected to new websocket client
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 26, 2021 11:49:19 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
-[debug] [2021-10-27T07:55:37.507Z] Oct 27, 2021 7:55:37 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
-INFO: Websocket client disconnected
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 7:55:37 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
-[debug] [2021-10-27T07:55:41.237Z] Oct 27, 2021 7:55:41 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
-INFO: Connected to new websocket client
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 7:55:41 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
-[debug] [2021-10-27T10:55:13.578Z] Oct 27, 2021 10:55:13 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
-INFO: Websocket client disconnected
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 10:55:13 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
-[debug] [2021-10-27T10:55:28.328Z] Oct 27, 2021 10:55:28 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
-INFO: Connected to new websocket client
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 10:55:28 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
-[debug] [2021-10-27T10:55:54.507Z] Oct 27, 2021 10:55:54 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
-INFO: Websocket client disconnected
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 10:55:54 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
-[debug] [2021-10-27T10:56:32.118Z] Oct 27, 2021 10:56:32 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
-INFO: Connected to new websocket client
- {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 10:56:32 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 27, 2021 8:42:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-10-27T20:42:28.794Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast [none]
+[debug] [2021-10-27T20:42:28.794Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast {"eventId":"ee7ef253-e0ae-4f9f-a636-f64b719213ab","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/choosable-dev","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2021-10-27T20:42:28.794Z","data":{"uid":"KfXhywiUkYFfatnp5RZSuSaM3u6t","email":"algae.algae.23@example.com","emailVerified":true,"displayName":"Algae Algae","photoURL":"https://eu.ui-avatars.com/api/?name=John+Doe","metadata":{"creationTime":"1635367348794","lastSignInTime":"1635367348794"},"customClaims":{},"providerData":[{"providerId":"microsoft.com","rawId":"1367921944632317470492207012088237639204","federatedId":"1367921944632317470492207012088237639204","displayName":"Algae Algae","photoUrl":"https://eu.ui-avatars.com/api/?name=John+Doe","email":"algae.algae.23@example.com","screenName":"algae_algae"}]}}
+[debug] [2021-10-27T20:42:28.802Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast 200
+[debug] [2021-10-27T20:42:28.802Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/choosable-dev/trigger_multicast {"status":"multicast_acknowledged"}

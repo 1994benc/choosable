@@ -4,13 +4,16 @@ import "tailwindcss/tailwind.css";
 import { NavBar } from "../components/NavBar";
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import initializeFirebaseApp from "../firebase";
+import useUserStore from "../stores/useUserStore";
 
 initializeFirebaseApp()
 
 function MyApp({ Component, pageProps }) {
+  const setUser = useUserStore(state => state.setUser);
   useEffect(() => {
     const subscription = onAuthStateChanged(getAuth(), (user) => {
       console.log(user)
+      setUser(user);
     });
     
     return () => {

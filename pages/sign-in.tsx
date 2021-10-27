@@ -5,15 +5,20 @@ import {
   OAuthProvider,
   signInWithRedirect,
 } from "firebase/auth";
+import { useRouter } from "next/dist/client/router";
 import React, { ReactElement, useEffect } from "react";
+import { pageContainer } from "../common/classNames";
 import { PrimaryButton } from "../components/PrimaryButton";
 import { SignInIcon } from "../components/SignInIcon";
+import useUserStore from "../stores/useUserStore";
 
 interface Props {}
 
 function SignIn({}: Props): ReactElement {
   const googleProvider = new GoogleAuthProvider();
   const microsoftProvider = new OAuthProvider("microsoft.com");
+  const user = useUserStore((state) => state.user);
+  const router = useRouter();
   useEffect(() => {
     const auth = getAuth();
     getRedirectResult(auth)
@@ -24,6 +29,12 @@ function SignIn({}: Props): ReactElement {
         console.log(error);
       });
   }, []);
+
+  useEffect(() => {
+    if (user) {
+      router.replace("/profile");
+    }
+  }, [user]);
 
   const signInGoogle = () => {
     const auth = getAuth();
@@ -36,13 +47,14 @@ function SignIn({}: Props): ReactElement {
   };
 
   return (
-    <div className="mx-auto max-w-xl px-3 py-20">
-      <div className='flex flex-col gap-y-2'>
+    <div className={`${pageContainer}`}>
+      <div className="flex flex-col gap-y-2">
         <PrimaryButton
           onClick={signInGoogle}
           text={
             <div className="flex items-center">
-              <i className="fab fa-google"></i> <span className="pl-2">Sign in with Google</span>
+              <i className="fab fa-google"></i>{" "}
+              <span className="pl-2">Sign in with Google</span>
             </div>
           }
         ></PrimaryButton>
@@ -50,7 +62,8 @@ function SignIn({}: Props): ReactElement {
           onClick={signInMicrosoft}
           text={
             <div className="flex items-center">
-              <i className="fab fa-microsoft"></i><span className="pl-2">Sign in with Microsoft</span>
+              <i className="fab fa-microsoft"></i>
+              <span className="pl-2">Sign in with Microsoft</span>
             </div>
           }
         ></PrimaryButton>
