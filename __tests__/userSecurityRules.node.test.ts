@@ -19,7 +19,7 @@ describe("user security rules", () => {
         firestore: {
           rules: fs.readFileSync("firestore.rules", "utf8"),
           host: "localhost",
-          port: 8080,
+          port: 8081,
         },
       });
       return testEnv;
